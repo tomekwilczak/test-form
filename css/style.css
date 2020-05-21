@@ -1,0 +1,25 @@
+body {
+  min-width: 100vw;
+}
+
+.main,
+.header {
+  width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+form input {
+  display: block;
+}
+
+.header {
+}
+
+.header__heading {
+  text-align: center;
+}
+
+.main {
+  background-color: lightblue;
+}
