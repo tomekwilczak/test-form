@@ -11,11 +11,76 @@
       <h1 class="header__heading">Formularz testowy</h1>
     </header>
     <main class="main">
-      <form>
+      <form action="http://dev.cotenfrontend.pl" method="POST">
         <p>
-          <label for="name">Imię:</label>
-          <input name="name" id="name" placeholder="Wpisz swoję imię" />
+          <label for="firstName">Imię:</label>
+          <input
+            name="firstName"
+            id="firstName"
+            placeholder="Wpisz swoję imię"
+          />
         </p>
+        <p>
+          <label for="lastName">Nazwisko:</label>
+          <input
+            name="lastName"
+            id="lastName"
+            placeholder="Wpisz swoję nazwisko"
+          />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Wpisz adres email"
+          />
+        </p>
+        <p>
+          <label for="phone">Numer telefonu:</label>
+          <input
+            name="phone"
+            type="tel"
+            id="phone"
+            placeholder="Wpisz adres email"
+          />
+        </p>
+        <p>
+          <label for="password">Podaj swoje hasło:</label><br />
+          <input type="password" name="password" id="password" />
+        </p>
+        <p>
+          <label for="date">Podaj datę:</label><br />
+          <input type="date" name="date" id="date" />
+        </p>
+        <p>
+          <label for="range">Wybierz poziom zaawansowania:</label><br />
+          <input
+            type="range"
+            min="0"
+            max="10"
+            name="range"
+            step="1"
+            id="range"
+          />
+        </p>
+        <p>
+          <label for="comments">Uwagi:</label><br />
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="Wpisz swoje uwagi"
+          ></textarea>
+        </p>
+        <!-- <p>
+          <label for="riddle">Riddle:</label>
+          <input name="riddle" id="riddle" value="cotenfrontend" />
+        </p> -->
+        <input type="submit" id="submit" value="Wyślij" /><input
+          type="reset"
+          value="Wyczyść"
+        />
       </form>
     </main>
   </body>
